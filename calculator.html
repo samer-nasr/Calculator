@@ -39,9 +39,6 @@
             <input type="button" value="/" id="divide">
         </div>
 
-        <a href="../logout.php" >
-            <h2 class="logout">Logout!!</h2>
-        </a>
     </div>
     
     <script src="jQuery.js"></script>
@@ -49,12 +46,4 @@
 </body>
 </html>
 
-<?php
-    session_start();
-    if(!$_SESSION['samer']){ 
-        session_start();
-        header('location:../index.html');
-    }
-
-?>
 
