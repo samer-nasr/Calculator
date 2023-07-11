@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://code.jquery.com/jquery-3.1.1.js" ></script>
+</head>
+<body>
+    <h2 id="title">CALCULATOR</h2>
+    <div class="board">
+        <div class="divs">
+            <label  for="title" id="screen"></label>
+        </div>
+        <div class="divs">
+            <input type="button" value="1" id="1">
+            <input type="button" value="2" id="2">
+            <input type="button" value="3" id="3">
+            <input type="button" value="+" id="plus">
+        </div>
+        <div class="divs">
+            <input type="button" value="4" id="4">
+            <input type="button" value="5" id="5">
+            <input type="button" value="6" id="6">
+            <input type="button" value="-" id="minus">
+        </div>
+        <div class="divs">
+            <input type="button" value="7" id="7">
+            <input type="button" value="8" id="8">
+            <input type="button" value="9" id="9">
+            <input type="button" value="X" id="multiple">
+        </div>
+        <div class="divs">
+            <input type="button" value="C" id="clear">
+            <input type="button" value="0" id="0">
+            <input type="button" value="=" id="equal">
+            <input type="button" value="/" id="divide">
+        </div>
+
+        <a href="../logout.php" >
+            <h2 class="logout">Logout!!</h2>
+        </a>
+    </div>
+    
+    <script src="jQuery.js"></script>
+    
+</body>
+</html>
+
+<?php
+    session_start();
+    if(!$_SESSION['samer']){ 
+        session_start();
+        header('location:../index.html');
+    }
+
+?>
+
