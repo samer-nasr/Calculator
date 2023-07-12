@@ -4,7 +4,7 @@ html, body {
 }
 
 body{ 
-    background: linear-gradient(to right,  #4C6AFF, #FF6B8B, #A77BFE);
+    background-color: rgb(106, 106, 102);
 }
 #title{ 
     text-align: center;
@@ -17,7 +17,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    width: 450px;
+    width: 400px;
     background-color: transparent;
     border-radius: 12px;
     height: 410px;
@@ -33,12 +33,12 @@ body{
 input[type = "button"]{ 
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     font-size: 25px;
+    background-color: rgb(132, 125, 125);
     opacity: 0.6;
     border: 2px white;
     margin-right: 4px;
-    background-color: white;
 }
 input[type = "button"]:hover{ 
     opacity: 1;
@@ -51,7 +51,7 @@ input[type = "button"]:hover{
     display: inline-block;
     border-radius: 12px;
     opacity: 0.7;
-    border: 2px blue solid;
+    border: 2px black solid;
     padding-left: 10px;
 }
 #screen:hover{ 
