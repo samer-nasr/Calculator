@@ -60,7 +60,7 @@ $("#9").click(function(){
 });
 
 $("#multiple").click(function(){ 
-    v+="*";
+    v+="x";
     $("#screen").html(v);
 });
 
@@ -92,7 +92,7 @@ $("#equal").click(function(){
             counter++;
             temp = temp.substring(i+1,temp.length);
             i=0;
-        }else if(temp.charAt(i) == "*"){ 
+        }else if(temp.charAt(i) == "x"){ 
             numbers[counter] = temp.substring(0,i);
             operation[counter] = "*";
             counter++;
