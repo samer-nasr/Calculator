@@ -1,26 +1,23 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: lightblue;
 }
 
-body{ 
-    background-color: rgb(106, 106, 102);
-}
 #title{ 
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     border-radius: 12px;
     border: 2px black solid;
 }
 .board{ 
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
     background-color: transparent;
     border-radius: 12px;
-    height: 410px;
     border: 2px black solid;
 }
 
@@ -31,8 +28,8 @@ body{
     margin-top: 15px;
 }
 input[type = "button"]{ 
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     /* border-radius: 50%; */
     font-size: 25px;
     background-color: rgb(132, 125, 125);
@@ -45,8 +42,8 @@ input[type = "button"]:hover{
 }
 #screen{ 
     background-color: white;
-    width: 240px;
-    height: 40px;
+    width: 300px;
+    height: 50px;
     font-size: 25px;
     display: inline-block;
     border-radius: 12px;
@@ -75,4 +72,16 @@ input[type = "button"]:hover{
 
 a { 
     text-decoration: none;
+}
+
+@media all and (max-width: 400px) {
+    #screen{ 
+        width: 220px;
+        height: 40px;
+    }
+
+    input[type = "button"]{ 
+        width: 50px;
+        height: 50px;
+    }
 }
